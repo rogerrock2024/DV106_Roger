@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    
+  }
+
+  #logo-D{
+    text-align: center;
+  }  
+
+  #logo-I {
+    opacity: 0; /* 初始透明度为0，完全透明 */
+    transition: opacity 12s ease-in; /* 添加过渡效果，持续1秒，使用ease函数 */
+  }
+
+  #hover-div {
+    text-align: center; /*居中*/
+    position: fixed; /*相對位置*/
+  }
+
+  .hover-area {
+    
+    padding: 10px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    font-size: 60px;
+    color: #ffffff;
+    position: relative; 
+    /* top: 20%; */
+    top: 60%;
+    right: 47%;
+    z-index: 2 ;
+  }
+  
+  #h-img {
+    display: none;
+    position: absolute;
+    bottom: -75%;
+    right: 25%;
+    width: 250px; 
+    height: auto;
+    z-index: -20;
+    opacity: 1;
+  }
+  
+  #hover-div:hover #h-img {
+    display: block;
+  }
+
+
+  
+  #mp3-player {
+    position: fixed;
+    top: 20px; /* 调整到右上角，距离顶部20px */
+    right: 20px; /* 调整到右上角，距离右侧20px */
+    text-align: center;
+  }
+
+  .link1 {
+    color: #ffffff; /* 设置超链接文字颜色 */
+    text-decoration: none; /* 去除底线 */
+    color:#635e5e;
+    font:55px bold normal BrushScriptStdMedium;
+    text-shadow:0px 0px 5px #6c6868;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -otransition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+  
+
+
+  .link1:hover {
+    color:#ffffff;
+    text-shadow:0px 0px 5px #9a8484a1;
+  }
