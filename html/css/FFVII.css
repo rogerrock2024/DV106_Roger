@@ -8,6 +8,7 @@ body {
     margin: 0;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
     background: linear-gradient(to bottom,  #000000 60%,#28292b 100%); 
+    font-size: 16px; /* 假設正常情況下的字體大小為 16px */
 
   }
 
@@ -20,14 +21,12 @@ body {
   }  
 
   #logo-I {
-    position: absolute;
-  top: -350px;
-  left: -390px;
-  right: 0;
-  bottom: 0;
-  margin: auto; /* 將圖片水平垂直置中 */
-  width:730px; /*調整圖片的寬度為其容器的50%*/
-  max-width: 730px; /*確保圖片不會超出其容器*/
+    
+    position:fixed;
+    transform: translate(-50%,-80%) scale(0.7);;
+    max-width: 100%;
+    height: auto;
+  
   max-height: 80vh; /* 限制圖片的最大高度為視窗高度的80% */
     opacity: 0; /* 初始透明度为0，完全透明 */
     transition: opacity 12s ease-in; /* 添加过渡效果，持续1秒，使用ease函数 */
@@ -54,9 +53,10 @@ body {
   
   #h-img {
     display: none;
-    position: absolute;
-    bottom: -75%;
-    right: 25%;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-220px,0px);
     width: 250px; 
     height: auto;
     z-index: -20;
@@ -80,12 +80,16 @@ body {
     color: #ffffff; /* 设置超链接文字颜色 */
     text-decoration: none; /* 去除底线 */
     color:#635e5e;
-    font:55px bold normal BrushScriptStdMedium;
+    font:45px bold normal BrushScriptStdMedium;
     text-shadow:0px 0px 5px #6c6868;
     -webkit-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
     -otransition: all 0.5s linear;
     transition: all 0.5s linear;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(40px,95px)
   }
   
 
@@ -94,3 +98,46 @@ body {
     color:#ffffff;
     text-shadow:0px 0px 5px #9a8484a1;
   }
+
+  /* 在 FFVII.css 中新增或修改下面的 CSS 規則 */
+
+/* 小型設備，比如手機 */
+@media (max-width: 576px) {
+  /* 在這裡新增你的 CSS 規則，用於小型設備 */
+  .link1 {
+      font-size: 35px; /* 例如，調整字體大小 */
+      position: fixed;
+      height: auto;
+      top: 50%; /* 將元素定位於父元素的垂直中心 */
+    left: 50%; /* 將元素定位於父元素的水平中心 */
+    transform: translate(-70px, 80px); /* 將元素水平和垂直居中 */
+  }
+  #h-img{
+    
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-145px,24px);
+    width: 150px; 
+    height: auto;
+    z-index: -20;
+    opacity: 1;
+
+  }
+}
+
+/* 中型設備，比如平板 */
+@media (min-width: 577px) and (max-width: 992px) {
+  /* 在這裡新增你的 CSS 規則，用於中型設備 */
+  body {
+      font-size: 16px; /* 例如，調整字體大小 */
+  }
+}
+
+/* 大型設備，比如桌面 */
+@media (min-width: 993px) {
+  /* 在這裡新增你的 CSS 規則，用於大型設備 */
+  body {
+      font-size: 18px; /* 例如，調整字體大小 */
+  }
+}
