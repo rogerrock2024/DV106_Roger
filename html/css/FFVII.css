@@ -10,10 +10,23 @@ body {
   }
 
   #logo-D{
-    text-align: center;
+    /* text-align: center; */
+    position: relative;
+  text-align: center;
+  margin-top: 100px; /* 調整上邊距以使圖片位於螢幕中央 */
+    
   }  
 
   #logo-I {
+    position: absolute;
+  top: -350px;
+  left: -390px;
+  right: 0;
+  bottom: 0;
+  margin: auto; /* 將圖片水平垂直置中 */
+  width:730px; /*調整圖片的寬度為其容器的50%*/
+  max-width: 730px; /*確保圖片不會超出其容器*/
+  max-height: 80vh; /* 限制圖片的最大高度為視窗高度的80% */
     opacity: 0; /* 初始透明度为0，完全透明 */
     transition: opacity 12s ease-in; /* 添加过渡效果，持续1秒，使用ease函数 */
   }
