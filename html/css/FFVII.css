@@ -6,7 +6,9 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background: linear-gradient(to bottom,  #000000 60%,#28292b 100%); 
+
   }
 
   #logo-D{
@@ -39,7 +41,7 @@ body {
   .hover-area {
     
     padding: 10px;
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
     cursor: pointer;
     font-size: 60px;
     color: #ffffff;
