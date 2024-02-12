@@ -465,7 +465,7 @@ img {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   background-color: transparent;
-  padding: 15px 30px; }
+  padding: 2px 5px; }/*預設15px 30px*/
   .header-area .logo-area a {
     color: #ffffff;
     font-size: 36px;
@@ -490,7 +490,7 @@ img {
     background-color: #232323; }
   @media only screen and (max-width: 767px) {
     .header-area {
-      padding: 10px 0; } }
+      padding: 5px 0; } }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -498,7 +498,7 @@ img {
 
 .mainMenu {
   position: fixed;
-  width: 480px;
+  width: 300px;/*原始480*/
   height: 100%;
   top: 0;
   right: -500px;
@@ -531,6 +531,7 @@ img {
         right: 30px;
         top: 30px; } }
   .mainMenu .logo-area a {
+    margin-top: 40px; /* 調整上方空間的大小，您可以根據需要調整數值 */
     color: #ffffff;
     font-size: 30px;
     display: block;
@@ -584,8 +585,8 @@ img {
       padding: 30px 15px; } }
   @media only screen and (max-width: 767px) {
     .mainMenu {
-      padding: 15px;
-      width: 300px; } }
+      padding: 20px;
+      width: 150px; } }
 
 /* :: Menu Open CSS */
 .menu-open .mainMenu {
