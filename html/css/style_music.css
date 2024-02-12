@@ -52,12 +52,12 @@ text-transform: uppercase ;
 
 .player {
 z-index: 2;
-position: absolute;
-top: 87%;
+position: fixed;
+top: 50%;
 right: 50%;
-transform: translate(50%, 50%);    
+transform: translate(50%, -60%);    
 
-width: 26.15em ;
+width: 20.15em ;
 display:flex  ;
 overflow: hidden ;
 font-size: 1.32em ;
