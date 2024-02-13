@@ -22,9 +22,17 @@
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    var audio = document.getElementById('bkmp3');
-    audio.currentTime = 33;
-    audio.play();
+    document.addEventListener('DOMContentLoaded', function() {
+       var audio = document.getElementById('bkmp3');
+       audio.currentTime = 33;
+       audio.play();
     });
-  
+
+    function playSound(event) {
+        var checksound = document.getElementById("check-sound");
+        checksound.play();
+        event.preventDefault(); // 防止點擊超連結後跳轉
+        setTimeout(function() {
+            window.location.href = event.target.href;
+        }, checksound.duration * 570); // 延遲超連結跳轉，等待音效播放完畢
+    }
