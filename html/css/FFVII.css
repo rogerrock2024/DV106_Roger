@@ -16,14 +16,15 @@ body {
     /* text-align: center; */
     position: relative;
   text-align: center;
-  margin-top: 100px; /* 調整上邊距以使圖片位於螢幕中央 */
+  margin-top: 10px; /* 調整上邊距以使圖片位於螢幕中央 */
     
   }  
 
   #logo-I {
     
     position:fixed;
-    transform: translate(-50%,-80%) scale(0.7);;
+
+    transform: translate(-500px,-360px) scale(0.6);;
     max-width: 100%;
     height: auto;
   
