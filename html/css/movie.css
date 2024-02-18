@@ -15,6 +15,16 @@
   z-index: -3; /* 將影片設定為背景，並將z-index設定為-1，以確保其他內容位於其上 */
 }
 
+@media only screen and (max-width: 767px) {
+  .hero-thumbnail video {
+  max-width: 100%;
+  height: auto;
+  object-fit:inherit;
+  z-index: -3; /* 將影片設定為背景，並將z-index設定為-1，以確保其他內容位於其上 */ } 
+  }
+
+
+
 /*點選圖片出現視窗*/
 #video-container {
     display: none;
