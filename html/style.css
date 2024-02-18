@@ -959,7 +959,7 @@ img {
         display: none; } }
   @media only screen and (max-width: 767px) {
     .hero-area .hero-thumbnail {
-      height: 400px; } 
+      height: 200px; } 
     }
 
 /* :: Service Area CSS */
