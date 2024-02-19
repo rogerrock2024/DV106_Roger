@@ -888,7 +888,7 @@ img {
   z-index: 1;
   overflow: hidden;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: nowrap; }
   .hero-area .backEnd-content .dots {
     position: absolute;
     right: -200px;
