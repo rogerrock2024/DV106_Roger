@@ -22,7 +22,7 @@
   object-fit:inherit;
   z-index: -3; /* 將影片設定為背景，並將z-index設定為-1，以確保其他內容位於其上 */ } 
   }
-  @media only screen and (max-width: 882px) {
+  @media only screen and (max-width: 1099px) {
     .hero-thumbnail video {
     position:absolute;  
     width: 200%;
