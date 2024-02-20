@@ -888,7 +888,7 @@ img {
   z-index: 1;
   overflow: hidden;
   -ms-flex-wrap: wrap;
-  flex-wrap: nowrap; }
+  flex-wrap:nowrap ; }
   .hero-area .backEnd-content .dots {
     position: absolute;
     right: -200px;
@@ -959,9 +959,9 @@ img {
         display: none; } }
   @media only screen and (max-width: 767px) {
     .hero-area .hero-thumbnail {
-      height: 200px; } 
+      height: 200px; } /*原始400px*/
     }
-
+  
 /* :: Service Area CSS */
 .single-services-area {
   position: relative;
